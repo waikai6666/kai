@@ -1,3 +1,4 @@
+<!--
 <head>
 <title>kai</title>
 </head>
@@ -9,3 +10,31 @@
 <h2><br />留言板</h2>
 
 </body>
+-->
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <title>登录页面</title>    
+</head> 
+
+<body> 
+    <form action="./wait.html"> 
+        用户名:<input type="text" id="uname"/><br> 
+        密码:<input type="password" id="pwd"/><br> 
+        <input type="submit" value="登录" onclick="return checkuser()"/> 
+    </form> 
+</body> 
+<script type="text/javascript"> 
+    function getValue(id) { 
+        return document.getElementById(id).value; 
+    } 
+    function checkuser() { 
+        if(getValue('uname') == "magicliu" && getValue('pwd') == "123") { 
+            return true; 
+        }else { 
+            alert("登录名或密码错误！")
+            return false; 
+        } 
+    } 
+</script> 
+</html> 
